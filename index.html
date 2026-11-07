@@ -6,59 +6,28 @@
 <title>خطة برامج جمعية حنطة التنموية الخيرية – 2027</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root{
-    --green:#146c43;
-    --green-dark:#0e4d30;
-    --gold:#c9a227;
-    --bg:#f2f6f3;
-    --card:#ffffff;
-    --line:#e3ebe6;
-    --text:#1c2b23;
-    --muted:#6b7d73;
-    --radius:14px;
-    --sidebar-w:390px;
+    --green:#146c43; --green-dark:#0e4d30; --gold:#c9a227;
+    --bg:#f2f6f3; --card:#fff; --line:#e3ebe6;
+    --text:#1c2b23; --muted:#6b7d73; --radius:14px; --sidebar-w:400px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
-  body{
-    font-family:'Tajawal',system-ui,-apple-system,'Segoe UI',sans-serif;
-    background:var(--bg); color:var(--text);
-    -webkit-font-smoothing:antialiased;
-  }
+  body{font-family:'Tajawal',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
   button{font-family:inherit}
 
-  /* ================= HEADER ================= */
-  header{
-    position:sticky; top:0; z-index:50;
-    display:flex; align-items:center; gap:16px;
-    padding:14px 22px;
-    background:linear-gradient(135deg,var(--green-dark),var(--green) 55%,#1c8a57);
-    color:#fff;
-    box-shadow:0 4px 18px rgba(0,0,0,.15);
-  }
-  .logo{
-    width:48px;height:48px;flex:0 0 48px;border-radius:14px;
-    background:linear-gradient(145deg,#e5c74a,var(--gold));
-    display:grid;place-items:center;font-size:24px;
-    box-shadow:0 3px 10px rgba(0,0,0,.25);
-  }
-  .titles h1{font-size:18px;font-weight:800;letter-spacing:.2px}
-  .titles p{font-size:12.5px;opacity:.88;margin-top:2px;font-weight:500}
-  .head-actions{margin-inline-start:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-  .stat{
-    background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
-    padding:7px 14px;border-radius:11px;font-size:13px;font-weight:700;
-    display:flex;align-items:center;gap:7px;backdrop-filter:blur(4px);
-  }
-  .stat b{font-size:16px}
-  .btn{
-    display:inline-flex;align-items:center;gap:7px;
-    padding:9px 15px;border-radius:11px;border:1px solid transparent;
-    font-size:13.5px;font-weight:700;cursor:pointer;
-    transition:.2s; white-space:nowrap;
-  }
+  /* HEADER */
+  header{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:14px;padding:12px 20px;background:linear-gradient(135deg,var(--green-dark),var(--green) 55%,#1c8a57);color:#fff;box-shadow:0 4px 18px rgba(0,0,0,.15);flex-wrap:wrap}
+  .logo{width:46px;height:46px;flex:0 0 46px;border-radius:13px;background:linear-gradient(145deg,#e5c74a,var(--gold));display:grid;place-items:center;font-size:23px;box-shadow:0 3px 10px rgba(0,0,0,.25)}
+  .titles h1{font-size:17px;font-weight:800}
+  .titles p{font-size:12px;opacity:.88;margin-top:2px;font-weight:500}
+  .head-actions{margin-inline-start:auto;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .stat{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:10px;font-size:12.5px;font-weight:700;display:flex;align-items:center;gap:6px}
+  .stat b{font-size:15px}
+  .sync-status{font-size:11.5px;font-weight:700;padding:6px 12px;border-radius:10px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);white-space:nowrap;transition:.25s}
+  .btn{display:inline-flex;align-items:center;gap:6px;padding:8px 13px;border-radius:10px;border:1px solid transparent;font-size:13px;font-weight:700;cursor:pointer;transition:.2s;white-space:nowrap}
   .btn-light{background:#fff;color:var(--green-dark);box-shadow:0 2px 8px rgba(0,0,0,.15)}
   .btn-light:hover{transform:translateY(-1px);box-shadow:0 5px 14px rgba(0,0,0,.22)}
   .btn-ghost-light{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.35)}
@@ -69,232 +38,168 @@
   .btn-danger:hover{background:#b91c1c}
   .btn-ghost{background:#eef2ef;color:#35473d}
   .btn-ghost:hover{background:#e2e9e4}
+  .btn-gold{background:linear-gradient(135deg,#e5c74a,var(--gold));color:#3a2e00}
+  .btn-gold:hover{filter:brightness(1.06)}
 
-  /* ================= APP LAYOUT ================= */
-  .app{padding:22px;transition:padding-right .35s ease}
-  @media(min-width:1180px){
-    body.sidebar-open .app{padding-right:calc(var(--sidebar-w) + 26px)}
-  }
+  /* LAYOUT */
+  .app{padding:20px;transition:padding-right .35s ease}
+  @media(min-width:1200px){body.sidebar-open .app{padding-right:calc(var(--sidebar-w) + 26px)}}
+  .legend{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px;background:var(--card);padding:11px 15px;border-radius:var(--radius);border:1px solid var(--line);box-shadow:0 2px 10px rgba(20,108,67,.05)}
+  .legend .lg-title{font-size:12.5px;font-weight:800;color:var(--muted);margin-inline-end:6px;align-self:center}
+  .lg-item{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px}
+  .lg-dot{width:8px;height:8px;border-radius:50%}
 
-  /* Legend */
-  .legend{
-    display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px;
-    background:var(--card);padding:12px 16px;border-radius:var(--radius);
-    border:1px solid var(--line);box-shadow:0 2px 10px rgba(20,108,67,.05);
-  }
-  .legend .lg-title{font-size:13px;font-weight:800;color:var(--muted);margin-inline-end:6px;align-self:center}
-  .lg-item{
-    display:flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;
-    padding:4px 11px;border-radius:20px;
-  }
-  .lg-dot{width:9px;height:9px;border-radius:50%}
-
-  /* ================= CALENDAR ================= */
-  .calendar{
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
-    gap:18px;
-  }
-  .month{
-    background:var(--card);border:1px solid var(--line);
-    border-radius:var(--radius);overflow:hidden;
-    box-shadow:0 2px 12px rgba(20,108,67,.06);
-    transition:.25s;
-  }
+  /* CALENDAR */
+  .calendar{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+  .month{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 12px rgba(20,108,67,.06);transition:.25s}
   .month:hover{box-shadow:0 8px 26px rgba(20,108,67,.13);transform:translateY(-2px)}
-  .month-head{
-    display:flex;align-items:center;justify-content:space-between;
-    padding:11px 15px;
-    background:linear-gradient(135deg,var(--green-dark),var(--green));
-    color:#fff;
-  }
-  .month-head .m-name{font-size:15.5px;font-weight:800}
-  .month-head .m-year{font-size:12px;font-weight:700;opacity:.85;background:rgba(255,255,255,.18);padding:2px 9px;border-radius:20px}
-  .weekdays{
-    display:grid;grid-template-columns:repeat(7,1fr);
-    padding:8px 10px 4px;gap:3px;
-    background:#f7faf8;border-bottom:1px solid var(--line);
-  }
+  .month-head{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:linear-gradient(135deg,var(--green-dark),var(--green));color:#fff}
+  .month-head .m-name{font-size:15px;font-weight:800}
+  .month-head .m-year{font-size:11.5px;font-weight:700;opacity:.85;background:rgba(255,255,255,.18);padding:2px 8px;border-radius:20px}
+  .weekdays{display:grid;grid-template-columns:repeat(7,1fr);padding:7px 10px 3px;gap:3px;background:#f7faf8;border-bottom:1px solid var(--line)}
   .weekdays div{font-size:10px;font-weight:800;color:var(--muted);text-align:center}
-  .days{
-    display:grid;grid-template-columns:repeat(7,1fr);
-    gap:4px;padding:8px 10px 12px;
-  }
-  .day{
-    min-height:62px;border:1px solid #eef3f0;border-radius:9px;
-    padding:3px 4px 4px;background:#fcfdfc;cursor:pointer;
-    display:flex;flex-direction:column;gap:3px;
-    transition:.15s; position:relative;
-  }
+  .days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;padding:8px 10px 11px}
+  .day{min-height:62px;border:1px solid #eef3f0;border-radius:9px;padding:3px 4px 4px;background:#fcfdfc;cursor:pointer;display:flex;flex-direction:column;gap:3px;transition:.15s;position:relative}
   .day:hover{background:#eef7f1;border-color:#bfe0cc}
+  .day.colored:hover{filter:brightness(.95)}
   .day.empty{background:transparent;border:none;cursor:default;pointer-events:none}
   .dnum{font-size:10.5px;font-weight:800;color:#93a49a;line-height:1;text-align:start}
   .day:hover .dnum{color:var(--green)}
+  .day.colored .dnum{color:#1c2b23}
   .chips{display:flex;flex-direction:column;gap:2px}
-  .chip{
-    font-size:9.5px;font-weight:700;line-height:1.4;
-    padding:2px 4px;border-radius:4px;
-    border-right:2.5px solid var(--c);
-    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-    transition:.15s;
-  }
+  .chip{font-size:9.5px;font-weight:700;line-height:1.4;padding:2px 4px;border-radius:4px;border-right:2.5px solid var(--c);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:.15s}
   .chip:hover{filter:brightness(.94);transform:translateX(-1px)}
 
-  /* ================= SIDEBAR ================= */
-  .sidebar{
-    position:fixed;top:0;right:0;height:100vh;width:var(--sidebar-w);
-    background:#fff;z-index:80;
-    display:flex;flex-direction:column;
-    box-shadow:-10px 0 34px rgba(0,0,0,.14);
-    transform:translateX(105%);
-    transition:transform .35s cubic-bezier(.4,0,.2,1);
-    border-left:1px solid var(--line);
-  }
+  /* SIDEBAR */
+  .sidebar{position:fixed;top:0;right:0;height:100vh;width:var(--sidebar-w);background:#fff;z-index:80;display:flex;flex-direction:column;box-shadow:-10px 0 34px rgba(0,0,0,.14);transform:translateX(105%);transition:transform .35s cubic-bezier(.4,0,.2,1);border-left:1px solid var(--line)}
   body.sidebar-open .sidebar{transform:translateX(0)}
-  .sb-head{
-    display:flex;align-items:center;gap:10px;
-    padding:15px 18px;
-    background:linear-gradient(135deg,var(--green-dark),var(--green));
-    color:#fff;flex:0 0 auto;
-  }
+  .sb-head{display:flex;align-items:center;gap:10px;padding:14px 18px;background:linear-gradient(135deg,var(--green-dark),var(--green));color:#fff}
   .sb-head h2{font-size:16px;font-weight:800}
-  .sb-head .close{
-    margin-inline-start:auto;background:rgba(255,255,255,.16);
-    border:none;color:#fff;width:32px;height:32px;border-radius:9px;
-    font-size:20px;line-height:1;cursor:pointer;transition:.2s;
-  }
+  .sb-head .close{margin-inline-start:auto;background:rgba(255,255,255,.16);border:none;color:#fff;width:32px;height:32px;border-radius:9px;font-size:20px;line-height:1;cursor:pointer;transition:.2s}
   .sb-head .close:hover{background:rgba(255,255,255,.3)}
-  .sb-body{flex:1;overflow-y:auto;padding:16px 18px 30px}
+  .sb-body{flex:1;overflow-y:auto;padding:15px 17px 30px}
   .sb-body::-webkit-scrollbar{width:8px}
   .sb-body::-webkit-scrollbar-thumb{background:#cfe0d6;border-radius:8px}
-
-  .section-title{
-    font-size:13px;font-weight:800;color:var(--green-dark);
-    display:flex;align-items:center;gap:7px;
-    margin:4px 0 12px;padding-bottom:7px;
-    border-bottom:2px solid #eaf3ee;
-  }
-  .section-title span.ico{font-size:15px}
-
-  .field{margin-bottom:12px}
-  .field label{
-    display:block;font-size:12.5px;font-weight:700;color:#3a4d43;
-    margin-bottom:5px;
-  }
-  .field input,.field select,.field textarea{
-    width:100%;padding:9px 11px;border:1.5px solid #dde7e1;border-radius:10px;
-    font-family:inherit;font-size:13px;color:var(--text);background:#fbfdfc;
-    transition:.18s;outline:none;resize:vertical;
-  }
-  .field input:focus,.field select:focus,.field textarea:focus{
-    border-color:var(--green);background:#fff;
-    box-shadow:0 0 0 3px rgba(20,108,67,.12);
-  }
-  .field input::placeholder,.field textarea::placeholder{color:#a9b8b0;font-size:12px}
-  .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .hint{
-    font-size:11px;color:var(--muted);background:#f2f8f4;
-    border-right:3px solid var(--gold);padding:7px 10px;border-radius:7px;
-    margin-bottom:14px;line-height:1.6;
-  }
-  .sb-actions{display:flex;gap:9px;margin-top:16px}
+  .section-title{font-size:13px;font-weight:800;color:var(--green-dark);display:flex;align-items:center;gap:6px;margin:4px 0 11px;padding-bottom:6px;border-bottom:2px solid #eaf3ee}
+  .help-box{background:#f5faf6;border:1px solid #d9e9de;border-radius:11px;margin-bottom:14px;overflow:hidden}
+  .help-box summary{list-style:none;cursor:pointer;padding:10px 13px;font-size:12.5px;font-weight:800;color:var(--green-dark);display:flex;align-items:center;gap:7px;user-select:none;transition:.15s}
+  .help-box summary::-webkit-details-marker{display:none}
+  .help-box summary::after{content:"▾";margin-inline-start:auto;font-size:13px;transition:.25s}
+  .help-box[open] summary::after{transform:rotate(180deg)}
+  .help-box summary:hover{background:#eaf5ee}
+  .help-box .help-content{padding:3px 13px 13px;font-size:12px;color:#3f5449;line-height:1.75}
+  .help-box .help-content h4{font-size:12px;font-weight:800;color:var(--green-dark);margin:9px 0 3px}
+  .help-box .help-content ul{padding-inline-start:15px;margin-bottom:5px}
+  .help-box .help-content li{margin-bottom:3px}
+  .help-box .help-content li b{color:var(--green-dark)}
+  .help-box .help-content code{background:#e3efe7;padding:1px 5px;border-radius:5px;font-size:11px}
+  .field{margin-bottom:11px}
+  .field label{display:block;font-size:12px;font-weight:700;color:#3a4d43;margin-bottom:4px}
+  .field label .req{color:#dc2626}
+  .field input,.field select,.field textarea{width:100%;padding:8px 10px;border:1.5px solid #dde7e1;border-radius:9px;font-family:inherit;font-size:12.5px;color:var(--text);background:#fbfdfc;transition:.18s;outline:none;resize:vertical}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green);background:#fff;box-shadow:0 0 0 3px rgba(20,108,67,.12)}
+  .field input::placeholder,.field textarea::placeholder{color:#a9b8b0;font-size:11.5px}
+  .field .hint-inline{font-size:10.5px;color:var(--muted);margin-top:3px;display:block;line-height:1.5}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  .hint{font-size:11px;color:var(--muted);background:#f2f8f4;border-right:3px solid var(--gold);padding:6px 9px;border-radius:6px;margin-bottom:12px;line-height:1.6}
+  .sb-actions{display:flex;gap:8px;margin-top:14px}
   .sb-actions .btn{flex:1;justify-content:center}
-
-  .empty-note{
-    font-size:12.5px;color:var(--muted);text-align:center;
-    padding:20px 10px;background:#f7faf8;border-radius:10px;
-    border:1px dashed #d5e3db;line-height:1.7;
-  }
-  .list-item{
-    border:1px solid var(--line);border-right:4px solid var(--c);
-    border-radius:10px;padding:9px 11px;margin-bottom:9px;
-    background:#fcfdfc;cursor:pointer;transition:.18s;
-  }
+  .empty-note{font-size:12px;color:var(--muted);text-align:center;padding:18px 8px;background:#f7faf8;border-radius:10px;border:1px dashed #d5e3db;line-height:1.7}
+  .list-item{border:1px solid var(--line);border-right:4px solid var(--c);border-radius:10px;padding:8px 10px;margin-bottom:8px;background:#fcfdfc;cursor:pointer;transition:.18s}
   .list-item:hover{background:#f2f9f5;transform:translateX(-2px)}
   .li-top{display:flex;align-items:flex-start;gap:8px}
-  .li-name{font-size:13px;font-weight:800;flex:1;line-height:1.5}
-  .li-del{
-    background:#fdecec;color:#dc2626;border:none;width:24px;height:24px;
-    border-radius:7px;font-size:16px;line-height:1;cursor:pointer;transition:.18s;flex:0 0 auto;
-  }
+  .li-name{font-size:12.5px;font-weight:800;flex:1;line-height:1.5}
+  .li-del{background:#fdecec;color:#dc2626;border:none;width:22px;height:22px;border-radius:6px;font-size:15px;line-height:1;cursor:pointer;transition:.18s;flex:0 0 auto}
   .li-del:hover{background:#dc2626;color:#fff}
-  .li-meta{font-size:11px;color:var(--muted);margin-top:4px;font-weight:600}
+  .li-meta{font-size:10.5px;color:var(--muted);margin-top:3px;font-weight:600}
 
-  /* ================= MODAL ================= */
-  .modal-backdrop{
-    position:fixed;inset:0;background:rgba(16,36,26,.5);z-index:120;
-    display:none;align-items:center;justify-content:center;padding:20px;
-    backdrop-filter:blur(3px);
-  }
-  .modal-backdrop.show{display:flex;animation:fade .2s ease}
+  /* SLIDE */
+  .slide-backdrop{position:fixed;inset:0;z-index:150;background:radial-gradient(circle at 20% 10%,rgba(20,108,67,.55),rgba(8,32,22,.82));display:none;align-items:center;justify-content:center;padding:22px;backdrop-filter:blur(5px)}
+  .slide-backdrop.show{display:flex;animation:fade .22s ease}
   @keyframes fade{from{opacity:0}to{opacity:1}}
-  .modal{
-    background:#fff;border-radius:16px;width:100%;max-width:460px;
-    max-height:88vh;display:flex;flex-direction:column;overflow:hidden;
-    box-shadow:0 24px 60px rgba(0,0,0,.3);
-    animation:pop .22s cubic-bezier(.34,1.4,.64,1);
-  }
-  @keyframes pop{from{transform:scale(.94);opacity:0}to{transform:scale(1);opacity:1}}
-  .modal-head{
-    display:flex;align-items:center;gap:10px;padding:14px 18px;
-    background:linear-gradient(135deg,var(--green-dark),var(--green));color:#fff;
-  }
-  .modal-head h3{font-size:15.5px;font-weight:800;flex:1;line-height:1.5}
-  .modal-head .x{
-    background:rgba(255,255,255,.16);border:none;color:#fff;width:30px;height:30px;
-    border-radius:8px;font-size:19px;cursor:pointer;line-height:1;transition:.18s;
-  }
-  .modal-head .x:hover{background:rgba(255,255,255,.32)}
-  .modal-body{padding:16px 18px;overflow-y:auto;flex:1}
-  .mrow{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed #eaf1ec;font-size:13px}
-  .mrow:last-child{border-bottom:none}
-  .mrow .k{color:var(--muted);font-weight:700;flex:0 0 118px}
-  .mrow .v{font-weight:600;flex:1;line-height:1.6;word-break:break-word}
-  .badge{
-    display:inline-block;padding:3px 11px;border-radius:20px;
-    font-size:11.5px;font-weight:800;
-  }
-  .modal-foot{display:flex;gap:9px;padding:13px 18px;border-top:1px solid var(--line);background:#fbfdfc}
-  .modal-foot .btn{flex:1;justify-content:center}
+  @keyframes slideIn{from{transform:translateY(20px) scale(.95);opacity:0}to{transform:translateY(0) scale(1);opacity:1}}
+  .slide{position:relative;width:100%;max-width:720px;max-height:92vh;background:repeating-linear-gradient(180deg,transparent 0 27px,rgba(20,108,67,.05) 27px 28px),linear-gradient(135deg,#fff 0%,#f9fcfa 100%);border-radius:20px;box-shadow:0 30px 80px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.15);display:flex;flex-direction:column;overflow:hidden;animation:slideIn .35s cubic-bezier(.34,1.4,.64,1)}
+  .slide-ribbon{height:8px;width:100%;background:linear-gradient(90deg,var(--green),var(--gold))}
+  .slide-head{display:flex;align-items:center;gap:10px;padding:11px 17px;border-bottom:1px dashed #d5e3db;background:rgba(255,255,255,.75)}
+  .slide-nav-btn{width:32px;height:32px;border-radius:9px;border:1.5px solid #d5e3db;background:#fff;color:var(--green-dark);font-size:12px;cursor:pointer;transition:.18s;display:grid;place-items:center}
+  .slide-nav-btn:hover{background:var(--green);color:#fff;border-color:var(--green)}
+  .slide-nav-btn:disabled{opacity:.35;cursor:not-allowed}
+  .slide-nav-btn:disabled:hover{background:#fff;color:var(--green-dark);border-color:#d5e3db}
+  .slide-meta{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px}
+  .slide-date{font-size:13px;font-weight:800;color:var(--green-dark)}
+  .slide-counter{font-size:11px;color:var(--muted);font-weight:700}
+  .slide-close{width:32px;height:32px;border-radius:9px;border:none;background:#fdecec;color:#dc2626;font-size:19px;line-height:1;cursor:pointer;transition:.18s}
+  .slide-close:hover{background:#dc2626;color:#fff}
+  .slide-body{padding:16px 24px 22px;overflow-y:auto;flex:1}
+  .slide-body::-webkit-scrollbar{width:8px}
+  .slide-body::-webkit-scrollbar-thumb{background:#cfe0d6;border-radius:8px}
+  .slide-type{display:inline-block;padding:5px 14px;border-radius:22px;font-size:12px;font-weight:800;margin-bottom:11px;box-shadow:0 3px 10px rgba(0,0,0,.08)}
+  .slide-title{font-size:24px;font-weight:900;line-height:1.4;color:#12241a;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid #eaf3ee}
+  .slide-purpose{background:linear-gradient(135deg,#f4faf6,#eaf5ee);border-right:4px solid var(--green);padding:11px 15px;border-radius:10px;margin-bottom:16px}
+  .slide-purpose .lbl{font-size:11px;font-weight:800;color:var(--green-dark);margin-bottom:5px;display:block}
+  .slide-purpose .val{font-size:13.5px;font-weight:600;color:#2b3d34;line-height:1.7}
+  .slide-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+  .slide-cell{background:#fbfdfc;border:1px solid #eaf1ec;border-radius:9px;padding:9px 11px}
+  .slide-cell .lbl{font-size:10.5px;font-weight:800;color:var(--muted);margin-bottom:4px;display:block}
+  .slide-cell .val{font-size:13px;font-weight:700;color:#1c2b23;line-height:1.6;word-break:break-word}
+  .slide-cell.wide{grid-column:1/-1}
+  .slide-foot{display:flex;gap:8px;padding:12px 18px;border-top:1px solid var(--line);background:#fbfdfc}
+  .slide-foot .btn{flex:1;justify-content:center}
 
-  /* ================= TOAST ================= */
-  .toast{
-    position:fixed;bottom:26px;left:50%;transform:translate(-50%,90px);
-    background:var(--green-dark);color:#fff;padding:12px 22px;border-radius:12px;
-    font-size:13.5px;font-weight:700;z-index:200;opacity:0;
-    transition:.35s cubic-bezier(.4,0,.2,1);box-shadow:0 10px 30px rgba(0,0,0,.28);
-    display:flex;align-items:center;gap:8px;pointer-events:none;
-  }
+  /* GITHUB MODAL */
+  .gh-modal-backdrop{position:fixed;inset:0;z-index:170;background:rgba(8,32,22,.75);display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(5px)}
+  .gh-modal-backdrop.show{display:flex;animation:fade .2s ease}
+  .gh-modal{width:100%;max-width:580px;max-height:93vh;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 30px 80px rgba(0,0,0,.5);animation:slideIn .3s cubic-bezier(.34,1.4,.64,1)}
+  .gh-modal-head{display:flex;align-items:center;gap:10px;padding:13px 18px;background:linear-gradient(135deg,var(--green-dark),var(--green));color:#fff}
+  .gh-modal-head h3{font-size:15px;font-weight:800;flex:1}
+  .gh-modal-head .close{background:rgba(255,255,255,.16);border:none;color:#fff;width:30px;height:30px;border-radius:8px;font-size:19px;line-height:1;cursor:pointer;transition:.18s}
+  .gh-modal-head .close:hover{background:rgba(255,255,255,.32)}
+  .gh-modal-body{padding:15px 18px;overflow-y:auto;flex:1;font-size:13px}
+  .gh-modal-body .notice{background:#fff8e1;border-right:3px solid var(--gold);padding:9px 12px;border-radius:8px;font-size:12px;color:#5c4a10;line-height:1.7;margin-bottom:14px}
+  .gh-modal-body .notice b{color:#8a6d00}
+  .gh-modal-body .notice code{background:rgba(0,0,0,.07);padding:1px 5px;border-radius:4px;font-size:11px;direction:ltr;display:inline-block}
+  .gh-modal-body .checkbox-row{display:flex;align-items:center;gap:9px;padding:9px 11px;background:#f5faf6;border-radius:9px;margin-bottom:12px;cursor:pointer}
+  .gh-modal-body .checkbox-row input{width:17px;height:17px;cursor:pointer;accent-color:var(--green)}
+  .gh-modal-body .checkbox-row label{cursor:pointer;font-size:12.5px;font-weight:700;color:#3a4d43;flex:1}
+  .gh-modal-foot{display:flex;gap:8px;padding:12px 18px;border-top:1px solid var(--line);background:#fbfdfc;flex-wrap:wrap}
+  .gh-modal-foot .btn{flex:1;justify-content:center;min-width:90px}
+  .gh-modal-foot .row-actions{display:flex;gap:8px;width:100%}
+
+  /* TOAST */
+  .toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,90px);background:var(--green-dark);color:#fff;padding:11px 20px;border-radius:11px;font-size:13px;font-weight:700;z-index:200;opacity:0;transition:.35s cubic-bezier(.4,0,.2,1);box-shadow:0 10px 30px rgba(0,0,0,.28);display:flex;align-items:center;gap:7px;pointer-events:none;max-width:90vw;text-align:center}
   .toast.show{transform:translate(-50%,0);opacity:1}
 
-  /* ================= RESPONSIVE ================= */
   @media(max-width:640px){
-    header{padding:12px 14px;gap:11px;flex-wrap:wrap}
-    .titles h1{font-size:15px}
-    .titles p{font-size:11px}
+    header{padding:10px 12px;gap:10px}
+    .titles h1{font-size:14.5px}
     .head-actions{width:100%;margin-inline-start:0}
-    .stat{font-size:11.5px;padding:6px 10px}
-    .app{padding:14px}
-    .calendar{grid-template-columns:1fr;gap:14px}
+    .app{padding:12px}
+    .calendar{grid-template-columns:1fr;gap:12px}
     .sidebar{width:100%}
+    .slide-body{padding:13px 15px 18px}
+    .slide-title{font-size:20px}
+    .slide-grid{grid-template-columns:1fr}
   }
-
-  /* ================= PRINT ================= */
   @media print{
-    header .head-actions,.sidebar,.modal-backdrop,.legend,.toast{display:none !important}
-    body{background:#fff}
+    @page{size:A4 portrait;margin:10mm}
+    *{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}
+    body{background:#fff !important}
+    header{position:static;box-shadow:none;margin-bottom:6mm}
+    header .head-actions,.sync-status{display:none !important}
+    .sidebar,.slide-backdrop,.gh-modal-backdrop,.toast,.legend,.hint{display:none !important}
     .app{padding:0 !important}
-    header{box-shadow:none;background:#0e4d30 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-    .calendar{grid-template-columns:1fr 1fr;gap:10px}
-    .month{break-inside:avoid;box-shadow:none;border:1px solid #ccc}
-    .month:hover{transform:none;box-shadow:none}
-    .chip{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .calendar{display:block !important;gap:0 !important}
+    .month{page-break-after:always;break-after:page;box-shadow:none !important;transform:none !important;margin:0 !important;border-radius:10px !important;border:1.5px solid #7ba98d !important;overflow:hidden}
+    .month:last-of-type{page-break-after:auto;break-after:auto}
+    .month:hover{transform:none !important;box-shadow:none !important}
+    .day{min-height:96px;padding:4px 5px 6px}
+    .chip{font-size:10px;padding:3px 5px}
+    .dnum{font-size:11px;font-weight:900}
   }
 </style>
 </head>
 <body>
 
-<!-- ============ HEADER ============ -->
 <header>
   <div class="logo">🌾</div>
   <div class="titles">
@@ -302,16 +207,17 @@
     <p>الخطة الزمنية لبرامج وأنشطة سنة 2027</p>
   </div>
   <div class="head-actions">
-    <div class="stat">📋 إجمالي الأنشطة: <b id="totalCount">0</b></div>
-    <button class="btn btn-ghost-light" onclick="window.print()">🖨️ طباعة</button>
-    <button class="btn btn-light" id="toggleBtn" onclick="toggleSidebar()">☰ لائحة الأنشطة</button>
+    <div class="stat">📋 <b id="totalCount">0</b></div>
+    <div class="sync-status" id="syncStatus">⚪ غير مربوط</div>
+    <button class="btn btn-ghost-light" onclick="openGHSettings()" title="إعدادات ومزامنة GitHub">☁️ GitHub</button>
+    <button class="btn btn-gold" onclick="exportPDF()">📄 PDF</button>
+    <button class="btn btn-light" id="toggleBtn" onclick="toggleSidebar()">☰ لائحة</button>
   </div>
 </header>
 
-<!-- ============ MAIN ============ -->
 <div class="app">
   <div class="legend">
-    <span class="lg-title">أنواع الأنشطة:</span>
+    <span class="lg-title">الأنواع:</span>
     <span class="lg-item" style="background:rgba(37,99,235,.1);color:#2563eb"><span class="lg-dot" style="background:#2563eb"></span>ندوة</span>
     <span class="lg-item" style="background:rgba(124,58,237,.1);color:#7c3aed"><span class="lg-dot" style="background:#7c3aed"></span>محاضرة</span>
     <span class="lg-item" style="background:rgba(8,145,178,.1);color:#0891b2"><span class="lg-dot" style="background:#0891b2"></span>تدريب</span>
@@ -322,457 +228,536 @@
   <div class="calendar" id="calendar"></div>
 </div>
 
-<!-- ============ SIDEBAR ============ -->
+<!-- SIDEBAR -->
 <aside class="sidebar" id="sidebar">
   <div class="sb-head">
     <h2>🌾 لائحة الأنشطة</h2>
-    <button class="close" onclick="toggleSidebar(false)" title="إخفاء اللائحة">×</button>
+    <button class="close" onclick="toggleSidebar(false)">×</button>
   </div>
-
   <div class="sb-body">
-    <div class="section-title"><span class="ico">➕</span> إضافة نشاط جديد</div>
-    <div class="hint">💡 يمكنك النقر على أي يوم في التقويم لتحديد الشهر واليوم تلقائيًا.</div>
-
+    <div class="section-title">➕ إضافة نشاط جديد</div>
+    <details class="help-box">
+      <summary>📖 لائحة الشرح (اضغط للعرض)</summary>
+      <div class="help-content">
+        <h4>🚀 كيف تُضيف نشاطًا؟</h4>
+        <ul><li>املأ الحقول ثم اضغط <code>💾 إضافة</code>.</li><li>أو انقر على يوم فارغ في التقويم فيُضبط التاريخ تلقائيًا.</li></ul>
+        <h4>📝 شرح الحقول</h4>
+        <ul>
+          <li><b>اسم النشاط:</b> يظهر في التقويم والقائمة.</li>
+          <li><b>النوع:</b> يحدد لون اليوم والشريحة.</li>
+          <li><b>الغاية:</b> عنوانها يتغيّر حسب النوع.</li>
+          <li><b>الفئة / المكان / المدرب / المشرفون:</b> بيانات تفصيلية.</li>
+        </ul>
+        <h4>🎨 التلوين</h4>
+        <ul><li>يوم بنشاط واحد → لون كامل. عدة أنواع → تدرّج.</li></ul>
+        <h4>🖱️ التفاعل</h4>
+        <ul><li>نقر على يوم فيه أنشطة → ورقة عرض الملاحظات مع تنقل (◀ ▶).</li><li>نقر على يوم فارغ → نموذج الإضافة.</li></ul>
+        <h4>☁️ مزامنة GitHub</h4>
+        <ul><li>زر «☁️ GitHub» يفتح الإعدادات والسحب/الحفظ.</li><li>عند التفعيل تُحفظ كل التعديلات في المستودع.</li></ul>
+        <h4>📄 PDF</h4>
+        <ul><li>اختر «حفظ كـ PDF» — كل شهر في صفحة.</li></ul>
+      </div>
+    </details>
+    <div class="hint">💡 انقر على أي يوم في التقويم لتحديد التاريخ تلقائيًا.</div>
     <form id="activityForm" autocomplete="off">
       <div class="field">
-        <label for="f-name">اسم النشاط *</label>
-        <input id="f-name" name="name" type="text" required placeholder="مثال: ندوة توعوية عن التغذية السليمة">
+        <label for="f-name">اسم النشاط <span class="req">*</span></label>
+        <input id="f-name" type="text" required placeholder="مثال: ندوة توعوية عن التغذية">
       </div>
-
       <div class="field">
-        <label for="f-type">نوع النشاط *</label>
-        <select id="f-type" name="type" required>
-          <option value="ندوة">ندوة</option>
-          <option value="محاضرة">محاضرة</option>
-          <option value="تدريب">تدريب</option>
-          <option value="مسير">مسير</option>
-          <option value="فعالية">فعالية</option>
-          <option value="مبادرة">مبادرة</option>
+        <label for="f-type">نوع النشاط <span class="req">*</span></label>
+        <select id="f-type" required>
+          <option value="ندوة">ندوة</option><option value="محاضرة">محاضرة</option>
+          <option value="تدريب">تدريب</option><option value="مسير">مسير</option>
+          <option value="فعالية">فعالية</option><option value="مبادرة">مبادرة</option>
         </select>
       </div>
-
       <div class="field">
         <label for="f-purpose" id="purposeLabel">الغاية من النشاط</label>
-        <textarea id="f-purpose" name="purpose" rows="2" placeholder="اذكر الهدف أو الغاية المرجوة..."></textarea>
+        <textarea id="f-purpose" rows="2" placeholder="الهدف المرجو..."></textarea>
       </div>
-
       <div class="field">
         <label for="f-audience">الفئة المستهدفة</label>
-        <input id="f-audience" name="audience" type="text" placeholder="مثال: النساء – الأطفال – الشباب...">
+        <input id="f-audience" type="text" placeholder="النساء، الأطفال، الشباب...">
       </div>
-
       <div class="field">
         <label for="f-place">مكان التنفيذ</label>
-        <input id="f-place" name="place" type="text" placeholder="مثال: قاعة الجمعية – الساحة العامة...">
+        <input id="f-place" type="text" placeholder="قاعة الجمعية، الساحة العامة...">
       </div>
-
       <div class="row2">
-        <div class="field">
-          <label for="f-month">الشهر *</label>
-          <select id="f-month" name="month" required></select>
-        </div>
-        <div class="field">
-          <label for="f-day">اليوم *</label>
-          <select id="f-day" name="day" required></select>
-        </div>
+        <div class="field"><label for="f-month">الشهر <span class="req">*</span></label><select id="f-month" required></select></div>
+        <div class="field"><label for="f-day">اليوم <span class="req">*</span></label><select id="f-day" required></select></div>
       </div>
-
       <div class="row2">
-        <div class="field">
-          <label for="f-supcount">عدد المشرفين</label>
-          <input id="f-supcount" name="supervisorsCount" type="number" min="0" step="1" placeholder="0">
-        </div>
-        <div class="field">
-          <label for="f-trainer">اسم المدرب</label>
-          <input id="f-trainer" name="trainer" type="text" placeholder="اسم المدرب">
-        </div>
+        <div class="field"><label for="f-supcount">عدد المشرفين</label><input id="f-supcount" type="number" min="0" step="1" placeholder="0"></div>
+        <div class="field"><label for="f-trainer">اسم المدرب</label><input id="f-trainer" type="text" placeholder="اسم المدرب"></div>
       </div>
-
       <div class="field">
         <label for="f-supnames">أسماء المشرفين</label>
-        <textarea id="f-supnames" name="supervisors" rows="2" placeholder="اكتب أسماء المشرفين مفصولة بفاصلة..."></textarea>
+        <textarea id="f-supnames" rows="2" placeholder="مفصولة بفاصلة..."></textarea>
       </div>
-
       <div class="sb-actions">
-        <button type="submit" class="btn btn-green">💾 إضافة النشاط</button>
+        <button type="submit" class="btn btn-green">💾 إضافة</button>
         <button type="reset" class="btn btn-ghost" id="resetBtn">مسح</button>
       </div>
     </form>
-
-    <div class="section-title" style="margin-top:24px"><span class="ico">📋</span> الأنشطة المضافة</div>
+    <div class="section-title" style="margin-top:20px">📋 الأنشطة المضافة</div>
     <div id="listBox"></div>
   </div>
 </aside>
 
-<!-- ============ MODAL ============ -->
-<div class="modal-backdrop" id="modal" onclick="if(event.target===this)closeDetails()">
-  <div class="modal">
-    <div class="modal-head">
-      <h3 id="modalTitle">تفاصيل النشاط</h3>
-      <button class="x" onclick="closeDetails()">×</button>
+<!-- SLIDE -->
+<div class="slide-backdrop" id="slideBackdrop" onclick="if(event.target===this)closeSlide()">
+  <div class="slide">
+    <div class="slide-ribbon" id="slideRibbon"></div>
+    <div class="slide-head">
+      <button class="slide-nav-btn" id="prevBtn" onclick="prevSlide()">◀</button>
+      <div class="slide-meta">
+        <div class="slide-date" id="slideDate">—</div>
+        <div class="slide-counter" id="slideCounter">—</div>
+      </div>
+      <button class="slide-nav-btn" id="nextBtn" onclick="nextSlide()">▶</button>
+      <button class="slide-close" onclick="closeSlide()">×</button>
     </div>
-    <div class="modal-body" id="modalBody"></div>
-    <div class="modal-foot">
-      <button class="btn btn-danger" id="modalDelete">🗑️ حذف النشاط</button>
-      <button class="btn btn-ghost" onclick="closeDetails()">إغلاق</button>
+    <div class="slide-body" id="slideBody"></div>
+    <div class="slide-foot">
+      <button class="btn btn-danger" onclick="deleteCurrentSlide()">🗑️ حذف</button>
+      <button class="btn btn-ghost" onclick="closeSlide()">إغلاق</button>
     </div>
   </div>
 </div>
 
-<!-- ============ TOAST ============ -->
+<!-- GITHUB SETTINGS MODAL -->
+<div class="gh-modal-backdrop" id="ghModal" onclick="if(event.target===this)closeGHSettings()">
+  <div class="gh-modal">
+    <div class="gh-modal-head">
+      <h3>☁️ إعدادات المزامنة مع GitHub</h3>
+      <button class="close" onclick="closeGHSettings()">×</button>
+    </div>
+    <div class="gh-modal-body">
+      <div class="notice">
+        ⚠️ <b>ملاحظة أمنية:</b> المفتاح (PAT) يُخزَّن في متصفح هذا الجهاز فقط ولا يُرسل إلا إلى <code>api.github.com</code>. استخدم <b>Fine-grained PAT</b> بصلاحية <code>Contents: Read and write</code> على مستودعك فقط، مع تاريخ انتهاء.
+      </div>
+      <form id="ghForm" onsubmit="saveGHSettings(event)" autocomplete="off">
+        <div class="field"><label>اسم مستخدم GitHub <span class="req">*</span></label><input id="gh-owner" type="text" required placeholder="username" style="direction:ltr"></div>
+        <div class="field"><label>اسم المستودع <span class="req">*</span></label><input id="gh-repo" type="text" required placeholder="repo-name" style="direction:ltr"></div>
+        <div class="field"><label>الفرع</label><input id="gh-branch" type="text" placeholder="main" value="main" style="direction:ltr"></div>
+        <div class="field">
+          <label>مسار الملف <span class="req">*</span></label>
+          <input id="gh-path" type="text" required placeholder="data/activities.json" value="data/activities.json" style="direction:ltr">
+          <span class="hint-inline">يُنشأ تلقائيًا عند أول حفظ.</span>
+        </div>
+        <div class="field">
+          <label>المفتاح الشخصي (PAT) <span class="req">*</span></label>
+          <input id="gh-token" type="password" required placeholder="github_pat_..." style="direction:ltr">
+          <span class="hint-inline">Fine-grained PAT — Contents: Read and write.</span>
+        </div>
+        <label class="checkbox-row">
+          <input id="gh-autosave" type="checkbox" checked>
+          <span>حفظ تلقائي في GitHub بعد كل تعديل</span>
+        </label>
+      </form>
+    </div>
+    <div class="gh-modal-foot">
+      <div class="row-actions">
+        <button type="button" class="btn btn-ghost" onclick="pullFromGH()">⬇️ سحب</button>
+        <button type="button" class="btn btn-ghost" onclick="pushToGH()">⬆️ حفظ</button>
+        <button type="button" class="btn btn-danger" onclick="clearGHSettings()">🗑️ حذف الإعدادات</button>
+      </div>
+      <div class="row-actions">
+        <button type="button" class="btn btn-ghost" onclick="closeGHSettings()">إلغاء</button>
+        <button type="submit" form="ghForm" class="btn btn-green">💾 حفظ الإعدادات</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
 
 <script>
 /* ============================================================
-   الثوابت
+   CONSTANTS
 ============================================================ */
-const MONTHS = ["يناير","فبراير","مارس","أبريل","مايو","يونيو",
-                "يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"];
+const MONTHS = ["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"];
 const WEEKDAYS = ["أحد","اثنين","ثلاثاء","أربعاء","خميس","جمعة","سبت"];
-
-const TYPE_COLORS = {
-  "ندوة":    "#2563eb",
-  "محاضرة":  "#7c3aed",
-  "تدريب":   "#0891b2",
-  "مسير":    "#ea580c",
-  "فعالية":  "#db2777",
-  "مبادرة":  "#16a34a"
-};
-
-const PURPOSE_LABELS = {
-  "ندوة":   "الغاية من الندوة",
-  "محاضرة": "الغاية من المحاضرة",
-  "تدريب":  "الغاية من التدريب",
-  "مسير":   "الغاية من المسير",
-  "فعالية": "الغاية من الفعالية",
-  "مبادرة": "الغاية من المبادرة"
-};
-
+const TYPE_COLORS = {"ندوة":"#2563eb","محاضرة":"#7c3aed","تدريب":"#0891b2","مسير":"#ea580c","فعالية":"#db2777","مبادرة":"#16a34a"};
+const PURPOSE_LABELS = {"ندوة":"الغاية من الندوة","محاضرة":"الغاية من المحاضرة","تدريب":"الغاية من التدريب","مسير":"الغاية من المسير","فعالية":"الغاية من الفعالية","مبادرة":"الغاية من المبادرة"};
 const YEAR = 2027;
 const STORE_KEY = "hanta_plan_2027";
+const GH_KEY = "hanta_gh_config";
 
 /* ============================================================
-   الحالة والتخزين
+   STATE
 ============================================================ */
 let activities = loadActivities();
 
 function loadActivities(){
-  try{
-    const raw = localStorage.getItem(STORE_KEY);
-    const arr = raw ? JSON.parse(raw) : [];
-    return Array.isArray(arr) ? arr : [];
-  }catch(e){ return []; }
+  try { const raw = localStorage.getItem(STORE_KEY); const arr = raw ? JSON.parse(raw) : []; return Array.isArray(arr) ? arr : []; }
+  catch(e){ return []; }
 }
-function saveActivities(){
-  try{ localStorage.setItem(STORE_KEY, JSON.stringify(activities)); }catch(e){}
-}
+function saveActivities(){ try { localStorage.setItem(STORE_KEY, JSON.stringify(activities)); } catch(e){} }
 
 /* ============================================================
-   أدوات مساعدة
+   UTILS
 ============================================================ */
-function daysInMonth(month){ return new Date(YEAR, month, 0).getDate(); }
-
-function hexToRgba(hex, a){
-  const n = parseInt(hex.slice(1), 16);
-  const r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255;
-  return `rgba(${r},${g},${b},${a})`;
-}
-function escapeHtml(str){
-  return String(str == null ? "" : str)
-    .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
-    .replace(/"/g,"&quot;").replace(/'/g,"&#039;");
-}
-function uid(){
-  return (crypto && crypto.randomUUID)
-    ? crypto.randomUUID()
-    : "a" + Date.now() + Math.random().toString(16).slice(2);
-}
-let toastTimer = null;
-function showToast(msg){
-  const t = document.getElementById("toast");
-  t.textContent = msg;
-  t.classList.add("show");
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(()=> t.classList.remove("show"), 2400);
-}
+function daysInMonth(m){ return new Date(YEAR, m, 0).getDate(); }
+function hexToRgba(hex, a){ const n = parseInt(hex.slice(1),16); return `rgba(${(n>>16)&255},${(n>>8)&255},${n&255},${a})`; }
+function escapeHtml(s){ return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;"); }
+function uid(){ return (crypto && crypto.randomUUID) ? crypto.randomUUID() : "a"+Date.now()+Math.random().toString(16).slice(2); }
+let toastTimer=null;
+function showToast(msg){ const t=document.getElementById("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove("show"),2600); }
 
 /* ============================================================
-   بناء التقويم
+   CALENDAR
 ============================================================ */
 function renderCalendar(){
-  const cal = document.getElementById("calendar");
-  cal.innerHTML = "";
-
-  for (let m = 1; m <= 12; m++){
-    const monthEl = document.createElement("div");
-    monthEl.className = "month";
-
-    /* رأس الشهر */
-    const head = document.createElement("div");
-    head.className = "month-head";
+  const cal = document.getElementById("calendar"); cal.innerHTML = "";
+  for (let m=1; m<=12; m++){
+    const monthEl = document.createElement("div"); monthEl.className = "month";
+    const head = document.createElement("div"); head.className = "month-head";
     head.innerHTML = `<span class="m-name">${MONTHS[m-1]}</span><span class="m-year">${YEAR}</span>`;
     monthEl.appendChild(head);
 
-    /* أسماء الأيام */
-    const wd = document.createElement("div");
-    wd.className = "weekdays";
-    WEEKDAYS.forEach(d=>{
-      const el = document.createElement("div");
-      el.textContent = d;
-      wd.appendChild(el);
-    });
+    const wd = document.createElement("div"); wd.className = "weekdays";
+    WEEKDAYS.forEach(d=>{ const el=document.createElement("div"); el.textContent=d; wd.appendChild(el); });
     monthEl.appendChild(wd);
 
-    /* شبكة الأيام */
-    const grid = document.createElement("div");
-    grid.className = "days";
-
-    const firstDayIndex = new Date(YEAR, m - 1, 1).getDay(); // 0 = الأحد
+    const grid = document.createElement("div"); grid.className = "days";
+    const firstDay = new Date(YEAR, m-1, 1).getDay();
     const total = daysInMonth(m);
+    for (let i=0;i<firstDay;i++){ const b=document.createElement("div"); b.className="day empty"; grid.appendChild(b); }
 
-    for (let i = 0; i < firstDayIndex; i++){
-      const blank = document.createElement("div");
-      blank.className = "day empty";
-      grid.appendChild(blank);
-    }
+    for (let d=1; d<=total; d++){
+      const cell = document.createElement("div"); cell.className="day";
+      const num = document.createElement("span"); num.className="dnum"; num.textContent=d; cell.appendChild(num);
 
-    for (let d = 1; d <= total; d++){
-      const cell = document.createElement("div");
-      cell.className = "day";
-      cell.dataset.month = m;
-      cell.dataset.day = d;
-
-      const num = document.createElement("span");
-      num.className = "dnum";
-      num.textContent = d;
-      cell.appendChild(num);
-
-      const chips = document.createElement("div");
-      chips.className = "chips";
-
-      activities
-        .filter(a => Number(a.month) === m && Number(a.day) === d)
-        .forEach(a => {
-          const color = TYPE_COLORS[a.type] || "#64748b";
-          const chip = document.createElement("div");
-          chip.className = "chip";
-          chip.style.setProperty("--c", color);
-          chip.style.background = hexToRgba(color, .13);
-          chip.style.color = color;
-          chip.textContent = a.name;
-          chip.title = `${a.name}\nالنوع: ${a.type}\nالمكان: ${a.place || "—"}`;
-          chip.addEventListener("click", (e)=>{
-            e.stopPropagation();
-            openDetails(a.id);
-          });
-          chips.appendChild(chip);
-        });
-
+      const dayActs = activities.filter(a => Number(a.month)===m && Number(a.day)===d);
+      const chips = document.createElement("div"); chips.className="chips";
+      dayActs.forEach(a=>{
+        const color = TYPE_COLORS[a.type]||"#64748b";
+        const chip = document.createElement("div"); chip.className="chip";
+        chip.style.setProperty("--c", color);
+        chip.style.background = hexToRgba(color,.22);
+        chip.style.color = color;
+        chip.textContent = a.name;
+        chip.title = `${a.name}\n${a.type}\n${a.place||"—"}`;
+        chip.addEventListener("click", e=>{ e.stopPropagation(); openSlide(a.id); });
+        chips.appendChild(chip);
+      });
       cell.appendChild(chips);
 
-      /* النقر على اليوم يفتح اللائحة ويحدد التاريخ */
-      cell.addEventListener("click", ()=>{
-        openSidebar();
-        const mSel = document.getElementById("f-month");
-        mSel.value = String(m);
-        fillDays(m, d);
-        document.getElementById("f-name").focus();
-      });
+      if (dayActs.length){
+        cell.classList.add("colored");
+        const colors = [...new Set(dayActs.map(a=>TYPE_COLORS[a.type]||"#64748b"))];
+        if (colors.length===1){
+          cell.style.background = hexToRgba(colors[0],.16);
+          cell.style.borderColor = hexToRgba(colors[0],.65);
+        } else {
+          const stops = colors.map((c,i)=>{ const s=Math.round(i*100/colors.length); const e=Math.round((i+1)*100/colors.length); return `${hexToRgba(c,.20)} ${s}%, ${hexToRgba(c,.20)} ${e}%`; }).join(", ");
+          cell.style.background = `linear-gradient(135deg, ${stops})`;
+          cell.style.borderColor = hexToRgba(colors[0],.6);
+        }
+        cell.style.borderWidth = "1.5px";
+      }
 
+      cell.addEventListener("click", ()=>{
+        const acts = activities.filter(a=>a.month===m && a.day===d);
+        if (acts.length) openSlide(acts[0].id);
+        else {
+          openSidebar();
+          document.getElementById("f-month").value = String(m);
+          fillDays(m, d);
+          document.getElementById("f-name").focus();
+        }
+      });
       grid.appendChild(cell);
     }
-
-    monthEl.appendChild(grid);
-    cal.appendChild(monthEl);
+    monthEl.appendChild(grid); cal.appendChild(monthEl);
   }
 }
 
 /* ============================================================
-   قوائم الشهر واليوم
+   MONTH/DAY SELECTS
 ============================================================ */
 function fillMonths(){
-  const sel = document.getElementById("f-month");
-  sel.innerHTML = "";
-  MONTHS.forEach((name, i)=>{
-    const opt = document.createElement("option");
-    opt.value = String(i + 1);
-    opt.textContent = name;
-    sel.appendChild(opt);
-  });
-  sel.value = "1";
+  const sel = document.getElementById("f-month"); sel.innerHTML="";
+  MONTHS.forEach((name,i)=>{ const o=document.createElement("option"); o.value=String(i+1); o.textContent=name; sel.appendChild(o); });
+  sel.value="1";
 }
-
 function fillDays(month, selectedDay){
-  const sel = document.getElementById("f-day");
-  sel.innerHTML = "";
+  const sel = document.getElementById("f-day"); sel.innerHTML="";
   const total = daysInMonth(Number(month));
-  for (let d = 1; d <= total; d++){
-    const opt = document.createElement("option");
-    opt.value = String(d);
-    opt.textContent = d;
-    sel.appendChild(opt);
-  }
-  sel.value = String(selectedDay && selectedDay <= total ? selectedDay : 1);
+  for (let d=1; d<=total; d++){ const o=document.createElement("option"); o.value=String(d); o.textContent=d; sel.appendChild(o); }
+  sel.value = String(selectedDay && selectedDay<=total ? selectedDay : 1);
 }
 
 /* ============================================================
-   اللائحة الجانبية
+   SIDEBAR
 ============================================================ */
 function toggleSidebar(force){
   const isOpen = document.body.classList.contains("sidebar-open");
   const next = (typeof force === "boolean") ? force : !isOpen;
   document.body.classList.toggle("sidebar-open", next);
-  document.getElementById("toggleBtn").textContent =
-    next ? "✕ إخفاء اللائحة" : "☰ لائحة الأنشطة";
-  if (next){
-    setTimeout(()=> document.getElementById("f-name").focus(), 320);
-  }
+  document.getElementById("toggleBtn").textContent = next ? "✕ إخفاء" : "☰ لائحة";
+  if (next) setTimeout(()=>document.getElementById("f-name").focus(), 320);
 }
 function openSidebar(){ toggleSidebar(true); }
 
 /* ============================================================
-   قائمة الأنشطة داخل اللائحة
+   LIST
 ============================================================ */
 function renderList(){
   const box = document.getElementById("listBox");
-  const sorted = [...activities].sort((a,b)=>
-    a.month - b.month || a.day - b.day || a.name.localeCompare(b.name, "ar")
-  );
-
-  if (!sorted.length){
-    box.innerHTML = '<p class="empty-note">لا توجد أنشطة مضافة بعد.<br>أضف أول نشاط من النموذج أعلاه 👆</p>';
-    return;
-  }
-
+  const sorted = [...activities].sort((a,b)=> a.month-b.month || a.day-b.day || a.name.localeCompare(b.name,"ar"));
+  if (!sorted.length){ box.innerHTML = '<p class="empty-note">لا توجد أنشطة بعد.<br>أضف أول نشاط 👆</p>'; return; }
   box.innerHTML = "";
   sorted.forEach(a=>{
-    const color = TYPE_COLORS[a.type] || "#64748b";
-    const item = document.createElement("div");
-    item.className = "list-item";
-    item.style.setProperty("--c", color);
-
-    const top = document.createElement("div");
-    top.className = "li-top";
-
-    const nameEl = document.createElement("span");
-    nameEl.className = "li-name";
-    nameEl.textContent = a.name;
-
-    const delBtn = document.createElement("button");
-    delBtn.className = "li-del";
-    delBtn.textContent = "×";
-    delBtn.title = "حذف النشاط";
-    delBtn.addEventListener("click", (e)=>{
-      e.stopPropagation();
-      if (confirm(`هل تريد حذف النشاط: "${a.name}" ؟`)){
-        removeActivity(a.id);
-      }
-    });
-
-    top.appendChild(nameEl);
-    top.appendChild(delBtn);
-
-    const meta = document.createElement("div");
-    meta.className = "li-meta";
+    const color = TYPE_COLORS[a.type]||"#64748b";
+    const item = document.createElement("div"); item.className="list-item"; item.style.setProperty("--c", color);
+    const top = document.createElement("div"); top.className="li-top";
+    const nameEl = document.createElement("span"); nameEl.className="li-name"; nameEl.textContent=a.name;
+    const delBtn = document.createElement("button"); delBtn.className="li-del"; delBtn.textContent="×";
+    delBtn.addEventListener("click", e=>{ e.stopPropagation(); if (confirm(`حذف "${a.name}"؟`)) removeActivity(a.id); });
+    top.appendChild(nameEl); top.appendChild(delBtn);
+    const meta = document.createElement("div"); meta.className="li-meta";
     meta.textContent = `${a.type} • ${MONTHS[a.month-1]} ${a.day}، ${YEAR}`;
-
-    item.appendChild(top);
-    item.appendChild(meta);
-
-    item.addEventListener("click", ()=> openDetails(a.id));
+    item.appendChild(top); item.appendChild(meta);
+    item.addEventListener("click", ()=> openSlide(a.id));
     box.appendChild(item);
   });
 }
 
 /* ============================================================
-   إضافة / حذف
+   ADD / DELETE
 ============================================================ */
 function removeActivity(id){
-  activities = activities.filter(a => a.id !== id);
-  saveActivities();
-  renderAll();
-  closeDetails();
-  showToast("🗑️ تم حذف النشاط");
+  activities = activities.filter(a=>a.id!==id);
+  saveActivities(); renderAll(); closeSlide();
+  showToast("🗑️ تم الحذف");
+  scheduleAutoSave();
 }
-
 function renderAll(){
-  renderCalendar();
-  renderList();
+  renderCalendar(); renderList();
   document.getElementById("totalCount").textContent = activities.length;
 }
 
 /* ============================================================
-   نافذة التفاصيل
+   SLIDE
 ============================================================ */
-let currentDetailId = null;
-
-function openDetails(id){
-  const a = activities.find(x => x.id === id);
-  if (!a) return;
-  currentDetailId = id;
-
-  const color = TYPE_COLORS[a.type] || "#64748b";
-  document.getElementById("modalTitle").textContent = a.name;
-
-  const rows = [
-    ["نوع النشاط", `<span class="badge" style="background:${hexToRgba(color,.13)};color:${color}">${escapeHtml(a.type)}</span>`],
-    [PURPOSE_LABELS[a.type] || "الغاية", escapeHtml(a.purpose) || "—"],
-    ["الفئة المستهدفة", escapeHtml(a.audience) || "—"],
-    ["مكان التنفيذ", escapeHtml(a.place) || "—"],
-    ["التاريخ", `${MONTHS[a.month-1]} ${a.day}، ${YEAR}`],
-    ["عدد المشرفين", escapeHtml(a.supervisorsCount) || "0"],
-    ["أسماء المشرفين", escapeHtml(a.supervisors) || "—"],
-    ["اسم المدرب", escapeHtml(a.trainer) || "—"]
-  ];
-
-  document.getElementById("modalBody").innerHTML = rows.map(([k,v])=>
-    `<div class="mrow"><div class="k">${k}</div><div class="v">${v}</div></div>`
-  ).join("");
-
-  document.getElementById("modal").classList.add("show");
+let slideDayActs = [], slideIdx = 0;
+function openSlide(id){
+  const a = activities.find(x=>x.id===id); if (!a) return;
+  slideDayActs = activities.filter(x=>x.month===a.month && x.day===a.day).sort((p,q)=>p.name.localeCompare(q.name,"ar"));
+  slideIdx = slideDayActs.findIndex(x=>x.id===id); if (slideIdx<0) slideIdx=0;
+  renderSlide(); document.getElementById("slideBackdrop").classList.add("show");
 }
-
-function closeDetails(){
-  document.getElementById("modal").classList.remove("show");
-  currentDetailId = null;
+function renderSlide(){
+  const a = slideDayActs[slideIdx]; if (!a){ closeSlide(); return; }
+  const color = TYPE_COLORS[a.type]||"#64748b";
+  document.getElementById("slideRibbon").style.background = `linear-gradient(90deg, ${color}, ${hexToRgba(color,.35)})`;
+  document.getElementById("slideDate").textContent = `${WEEKDAYS[new Date(YEAR,a.month-1,a.day).getDay()]} ${a.day} ${MONTHS[a.month-1]} ${YEAR}`;
+  document.getElementById("slideCounter").textContent = `النشاط ${slideIdx+1} من ${slideDayActs.length}`;
+  document.getElementById("prevBtn").disabled = slideIdx===0;
+  document.getElementById("nextBtn").disabled = slideIdx===slideDayActs.length-1;
+  const body = document.getElementById("slideBody");
+  body.innerHTML = `
+    <span class="slide-type" style="background:${hexToRgba(color,.15)};color:${color};border:1px solid ${hexToRgba(color,.35)}">${escapeHtml(a.type)}</span>
+    <h2 class="slide-title">${escapeHtml(a.name)}</h2>
+    <div class="slide-purpose"><span class="lbl">🎯 ${PURPOSE_LABELS[a.type]||"الغاية"}</span><div class="val">${escapeHtml(a.purpose)||'<span style="color:#94a3a0">لم تُحدَّد</span>'}</div></div>
+    <div class="slide-grid">
+      <div class="slide-cell"><span class="lbl">👥 الفئة المستهدفة</span><div class="val">${escapeHtml(a.audience)||"—"}</div></div>
+      <div class="slide-cell"><span class="lbl">📍 مكان التنفيذ</span><div class="val">${escapeHtml(a.place)||"—"}</div></div>
+      <div class="slide-cell"><span class="lbl">🧑‍🏫 المدرب</span><div class="val">${escapeHtml(a.trainer)||"—"}</div></div>
+      <div class="slide-cell"><span class="lbl">👤 عدد المشرفين</span><div class="val">${escapeHtml(a.supervisorsCount)||"0"}</div></div>
+      <div class="slide-cell wide"><span class="lbl">📝 أسماء المشرفين</span><div class="val">${escapeHtml(a.supervisors)||"—"}</div></div>
+    </div>`;
+  body.scrollTop = 0;
 }
-
-document.getElementById("modalDelete").addEventListener("click", ()=>{
-  const a = activities.find(x => x.id === currentDetailId);
-  if (a && confirm(`هل تريد حذف النشاط: "${a.name}" ؟`)){
-    removeActivity(a.id);
+function prevSlide(){ if (slideIdx>0){ slideIdx--; renderSlide(); } }
+function nextSlide(){ if (slideIdx<slideDayActs.length-1){ slideIdx++; renderSlide(); } }
+function closeSlide(){ document.getElementById("slideBackdrop").classList.remove("show"); slideDayActs=[]; slideIdx=0; }
+function deleteCurrentSlide(){
+  const a = slideDayActs[slideIdx]; if (!a) return;
+  if (confirm(`حذف "${a.name}"؟`)){
+    activities = activities.filter(x=>x.id!==a.id);
+    saveActivities(); renderAll(); closeSlide();
+    showToast("🗑️ تم الحذف");
+    scheduleAutoSave();
   }
-});
+}
 
 /* ============================================================
-   تهيئة النموذج
+   PDF
+============================================================ */
+function exportPDF(){
+  showToast("🖨️ اختر «حفظ كـ PDF» — كل شهر في صفحة");
+  setTimeout(()=>window.print(), 800);
+}
+
+/* ============================================================
+   GITHUB SYNC
+============================================================ */
+function loadGHConfig(){ try { return JSON.parse(localStorage.getItem(GH_KEY)||"{}"); } catch { return {}; } }
+function saveGHConfig(cfg){ localStorage.setItem(GH_KEY, JSON.stringify(cfg)); }
+function isGHConfigured(){ const c=loadGHConfig(); return !!(c.owner && c.repo && c.token && c.path); }
+
+let ghSha = null;
+let syncing = false;
+
+function utf8ToBase64(s){ return btoa(unescape(encodeURIComponent(s))); }
+function base64ToUtf8(s){ return decodeURIComponent(escape(atob(s))); }
+
+function updateSyncStatus(text, bg){
+  const el = document.getElementById("syncStatus");
+  el.textContent = text;
+  el.style.background = bg || "rgba(255,255,255,.15)";
+}
+
+async function ghRead(){
+  const c = loadGHConfig();
+  const url = `https://api.github.com/repos/${c.owner}/${c.repo}/contents/${encodeURIComponent(c.path)}?ref=${c.branch||'main'}`;
+  const res = await fetch(url, { headers: { 'Authorization': `Bearer ${c.token}`, 'Accept': 'application/vnd.github.v3+json' } });
+  if (res.status === 404) return { activities: [], sha: null };
+  if (!res.ok){ const e = await res.json().catch(()=>({})); throw new Error(e.message || `HTTP ${res.status}`); }
+  const data = await res.json();
+  const clean = (data.content||"").replace(/\s/g,"");
+  const text = base64ToUtf8(clean);
+  let parsed; try { parsed = JSON.parse(text); } catch { parsed = []; }
+  const list = Array.isArray(parsed) ? parsed : (parsed.activities || []);
+  return { activities: list, sha: data.sha };
+}
+
+async function ghWrite(list, sha){
+  const c = loadGHConfig();
+  const payload = JSON.stringify({ activities: list, updatedAt: new Date().toISOString(), updatedBy: c.owner }, null, 2);
+  const body = {
+    message: `تحديث خطة 2027 — ${new Date().toLocaleString("ar-EG")}`,
+    content: utf8ToBase64(payload),
+    branch: c.branch || "main"
+  };
+  if (sha) body.sha = sha;
+  const url = `https://api.github.com/repos/${c.owner}/${c.repo}/contents/${encodeURIComponent(c.path)}`;
+  const res = await fetch(url, {
+    method: "PUT",
+    headers: { 'Authorization': `Bearer ${c.token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  });
+  if (!res.ok){
+    const e = await res.json().catch(()=>({}));
+    const msg = e.message || `HTTP ${res.status}`;
+    if (res.status === 409) throw new Error("CONFLICT|" + msg);
+    throw new Error(msg);
+  }
+  const result = await res.json();
+  return result.content.sha;
+}
+
+async function pullFromGH(silent){
+  if (!isGHConfigured()){ if (!silent) showToast("⚠️ اضبط إعدادات GitHub أولاً"); return; }
+  if (syncing) return;
+  syncing = true;
+  updateSyncStatus("⏳ جارٍ السحب...", "rgba(255,200,0,.3)");
+  try {
+    const { activities: remote, sha } = await ghRead();
+    ghSha = sha;
+    activities = remote;
+    saveActivities(); renderAll();
+    updateSyncStatus("✅ محدَّث", "rgba(34,197,94,.4)");
+    if (!silent) showToast("✅ تم السحب من GitHub");
+  } catch (e){
+    updateSyncStatus("❌ فشل السحب", "rgba(239,68,68,.45)");
+    if (!silent) showToast("❌ " + e.message);
+  } finally { syncing = false; }
+}
+
+async function pushToGH(silent){
+  if (!isGHConfigured()){ if (!silent) showToast("⚠️ اضبط إعدادات GitHub أولاً"); return; }
+  if (syncing) return;
+  syncing = true;
+  updateSyncStatus("⏳ جارٍ الحفظ...", "rgba(255,200,0,.3)");
+  try {
+    const newSha = await ghWrite(activities, ghSha);
+    ghSha = newSha;
+    updateSyncStatus("✅ محفوظ", "rgba(34,197,94,.4)");
+    if (!silent) showToast("✅ تم الحفظ في GitHub");
+  } catch (e){
+    updateSyncStatus("❌ فشل الحفظ", "rgba(239,68,68,.45)");
+    if (e.message.startsWith("CONFLICT")){
+      if (!silent) alert("⚠️ شخص آخر عدّل الملف مؤخرًا.\nاضغط «⬇️ سحب» لدمج التعديلات، ثم أعد الحفظ.");
+    } else if (!silent) showToast("❌ " + e.message);
+  } finally { syncing = false; }
+}
+
+let autoSaveTimer = null;
+function scheduleAutoSave(){
+  const c = loadGHConfig();
+  if (!c.autoSave || !isGHConfigured()) return;
+  clearTimeout(autoSaveTimer);
+  updateSyncStatus("🕒 بانتظار الحفظ...", "rgba(255,200,0,.25)");
+  autoSaveTimer = setTimeout(()=> pushToGH(true), 2200);
+}
+
+/* ============================================================
+   GH SETTINGS MODAL
+============================================================ */
+function openGHSettings(){
+  const c = loadGHConfig();
+  document.getElementById("gh-owner").value = c.owner || "";
+  document.getElementById("gh-repo").value = c.repo || "";
+  document.getElementById("gh-branch").value = c.branch || "main";
+  document.getElementById("gh-path").value = c.path || "data/activities.json";
+  document.getElementById("gh-token").value = c.token || "";
+  document.getElementById("gh-autosave").checked = c.autoSave !== false;
+  document.getElementById("ghModal").classList.add("show");
+}
+function closeGHSettings(){ document.getElementById("ghModal").classList.remove("show"); }
+function saveGHSettings(e){
+  if (e) e.preventDefault();
+  const cfg = {
+    owner: document.getElementById("gh-owner").value.trim(),
+    repo: document.getElementById("gh-repo").value.trim(),
+    branch: document.getElementById("gh-branch").value.trim() || "main",
+    path: document.getElementById("gh-path").value.trim() || "data/activities.json",
+    token: document.getElementById("gh-token").value.trim(),
+    autoSave: document.getElementById("gh-autosave").checked
+  };
+  if (!cfg.owner || !cfg.repo || !cfg.token || !cfg.path){
+    alert("الرجاء ملء جميع الحقول المطلوبة");
+    return;
+  }
+  saveGHConfig(cfg);
+  closeGHSettings();
+  showToast("✅ تم حفظ الإعدادات");
+  updateSyncStatus("🔄 جارٍ الاتصال...", "rgba(255,200,0,.3)");
+  pullFromGH(true);
+}
+function clearGHSettings(){
+  if (!confirm("حذف إعدادات GitHub من هذا المتصفح؟ (لن يؤثر على المستودع)")) return;
+  localStorage.removeItem(GH_KEY);
+  ghSha = null;
+  closeGHSettings();
+  updateSyncStatus("⚪ غير مربوط", "rgba(255,255,255,.15)");
+  showToast("🗑️ تم حذف الإعدادات المحلية");
+}
+
+/* ============================================================
+   INIT
 ============================================================ */
 document.addEventListener("DOMContentLoaded", ()=>{
-  fillMonths();
-  fillDays(1, 1);
+  fillMonths(); fillDays(1,1);
 
-  /* تغيير الشهر => تحديث الأيام */
-  document.getElementById("f-month").addEventListener("change", function(){
-    fillDays(this.value, null);
-  });
+  document.getElementById("f-month").addEventListener("change", function(){ fillDays(this.value, null); });
 
-  /* تغيير النوع => تغيير عنوان الغاية */
   const typeSel = document.getElementById("f-type");
   const purposeLabel = document.getElementById("purposeLabel");
-  typeSel.addEventListener("change", ()=>{
-    purposeLabel.textContent = PURPOSE_LABELS[typeSel.value] || "الغاية من النشاط";
-  });
+  typeSel.addEventListener("change", ()=>{ purposeLabel.textContent = PURPOSE_LABELS[typeSel.value] || "الغاية من النشاط"; });
 
-  /* إرسال النموذج */
   document.getElementById("activityForm").addEventListener("submit", function(e){
     e.preventDefault();
-
     const name = document.getElementById("f-name").value.trim();
-    if (!name){ alert("الرجاء إدخال اسم النشاط"); return; }
-
-    const activity = {
-      id: uid(),
-      name: name,
+    if (!name){ alert("أدخل اسم النشاط"); return; }
+    activities.push({
+      id: uid(), name,
       type: document.getElementById("f-type").value,
       purpose: document.getElementById("f-purpose").value.trim(),
       audience: document.getElementById("f-audience").value.trim(),
@@ -782,39 +767,45 @@ document.addEventListener("DOMContentLoaded", ()=>{
       supervisorsCount: document.getElementById("f-supcount").value.trim(),
       supervisors: document.getElementById("f-supnames").value.trim(),
       trainer: document.getElementById("f-trainer").value.trim()
-    };
-
-    activities.push(activity);
-    saveActivities();
-    renderAll();
-
-    this.reset();
-    fillDays(1, 1);
+    });
+    saveActivities(); renderAll();
+    this.reset(); fillDays(1,1);
     typeSel.value = "ندوة";
     purposeLabel.textContent = PURPOSE_LABELS["ندوة"];
-
-    showToast("✅ تمت إضافة النشاط بنجاح");
+    showToast("✅ تمت الإضافة");
+    scheduleAutoSave();
     document.getElementById("f-name").focus();
   });
 
-  /* زر المسح */
   document.getElementById("resetBtn").addEventListener("click", ()=>{
-    setTimeout(()=>{
-      fillDays(1, 1);
-      document.getElementById("f-type").value = "ندوة";
-      purposeLabel.textContent = PURPOSE_LABELS["ندوة"];
-    }, 0);
+    setTimeout(()=>{ fillDays(1,1); document.getElementById("f-type").value="ندوة"; purposeLabel.textContent = PURPOSE_LABELS["ندوة"]; }, 0);
   });
 
   renderAll();
 
-  /* فتح اللائحة افتراضيًا على الشاشات الكبيرة */
-  if (window.innerWidth >= 1180) toggleSidebar(true);
+  /* حالة المزامنة الابتدائية */
+  if (isGHConfigured()){
+    updateSyncStatus("🔄 جارٍ الاتصال...", "rgba(255,200,0,.3)");
+    pullFromGH(true);
+  } else {
+    updateSyncStatus("⚪ غير مربوط", "rgba(255,255,255,.15)");
+  }
+
+  if (window.innerWidth >= 1200) toggleSidebar(true);
 });
 
-/* إغلاق النافذة بمفتاح Escape */
 document.addEventListener("keydown", (e)=>{
-  if (e.key === "Escape"){ closeDetails(); }
+  const slideOpen = document.getElementById("slideBackdrop").classList.contains("show");
+  const ghOpen = document.getElementById("ghModal").classList.contains("show");
+  if (e.key === "Escape"){
+    if (slideOpen) closeSlide();
+    else if (ghOpen) closeGHSettings();
+    else if (document.body.classList.contains("sidebar-open")) toggleSidebar(false);
+  }
+  if (slideOpen){
+    if (e.key === "ArrowLeft") nextSlide();
+    if (e.key === "ArrowRight") prevSlide();
+  }
 });
 </script>
 </body>
