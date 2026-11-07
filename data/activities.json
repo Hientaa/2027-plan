@@ -25,8 +25,21 @@
       "supervisorsCount": "1",
       "supervisors": "أ . محمد خليل",
       "trainer": "أ . علي ابراهيم"
+    },
+    {
+      "id": "6c52a992-45a4-4711-8f82-31d222c124f6",
+      "name": "1 موارد بشرية",
+      "type": "ندوة",
+      "purpose": "شرح المفاهيم الأساسية في ادارة الموارد البشرية",
+      "audience": "الشباب",
+      "place": "اونلاين",
+      "month": 1,
+      "day": 9,
+      "supervisorsCount": "",
+      "supervisors": "",
+      "trainer": "أ . علي ابراهيم"
     }
   ],
-  "updatedAt": "2026-11-07T20:42:19.762Z",
+  "updatedAt": "2026-11-07T20:44:37.010Z",
   "updatedBy": "hientaa"
 }
