@@ -77,8 +77,21 @@
       "supervisorsCount": "1",
       "supervisors": "المعندس الزراعي سلمان محمد",
       "trainer": "المهندس الزراعي عمار صالح"
+    },
+    {
+      "id": "cced1bd3-618b-4d94-84b0-a39e18e33d13",
+      "name": "السماد العضوي1",
+      "type": "تدريب",
+      "purpose": "شرح تحضير السماد العضوي المرحلة الأولى",
+      "audience": "المزارعين و الشباب",
+      "place": "مقر الجمعية",
+      "month": 2,
+      "day": 1,
+      "supervisorsCount": "1",
+      "supervisors": "المهندس سلمان محمد",
+      "trainer": "المهندسـ عمار صالح"
     }
   ],
-  "updatedAt": "2026-11-07T21:21:21.446Z",
+  "updatedAt": "2026-11-07T21:24:19.771Z",
   "updatedBy": "hientaa"
 }
