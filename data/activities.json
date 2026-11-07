@@ -116,8 +116,21 @@
       "supervisorsCount": "1",
       "supervisors": "المهندس سلمان محمد",
       "trainer": "المهندس عمار صالح"
+    },
+    {
+      "id": "3e304340-896e-46ec-94a6-f4f7e74220e7",
+      "name": "دورة تصميم",
+      "type": "تدريب",
+      "purpose": "تعريف بمصطلحات التصميم الغرافيكي",
+      "audience": "الشباب",
+      "place": "قاعة الجمعية",
+      "month": 1,
+      "day": 8,
+      "supervisorsCount": "",
+      "supervisors": "",
+      "trainer": "المصمم طارق ابراهيم"
     }
   ],
-  "updatedAt": "2026-11-07T21:28:43.382Z",
+  "updatedAt": "2026-11-07T21:32:19.467Z",
   "updatedBy": "hientaa"
 }
