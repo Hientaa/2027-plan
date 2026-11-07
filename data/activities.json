@@ -272,8 +272,21 @@
       "supervisorsCount": "",
       "supervisors": "",
       "trainer": "المصور حسان سليمان"
+    },
+    {
+      "id": "afd83f0c-014b-4d69-91cb-170204603ee8",
+      "name": "فن التصوير 3",
+      "type": "تدريب",
+      "purpose": "طريقة ضبط الكاميرا",
+      "audience": "الجميع",
+      "place": "مقر الجمعية",
+      "month": 1,
+      "day": 27,
+      "supervisorsCount": "",
+      "supervisors": "",
+      "trainer": "المصور حسان سليمان"
     }
   ],
-  "updatedAt": "2026-11-07T21:49:29.194Z",
+  "updatedAt": "2026-11-07T21:50:27.896Z",
   "updatedBy": "hientaa"
 }
