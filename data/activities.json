@@ -285,8 +285,21 @@
       "supervisorsCount": "",
       "supervisors": "",
       "trainer": "المصور حسان سليمان"
+    },
+    {
+      "id": "57e0c089-967e-45a6-bd11-581970803223",
+      "name": "فن التصوير 4",
+      "type": "تدريب",
+      "purpose": "طريقة دمج ادوات الذكاء الاصطناعي باخراج الصور",
+      "audience": "الجميع",
+      "place": "مقر الجمعية",
+      "month": 2,
+      "day": 3,
+      "supervisorsCount": "",
+      "supervisors": "",
+      "trainer": "المصور حسان سليمان"
     }
   ],
-  "updatedAt": "2026-11-07T21:50:27.896Z",
+  "updatedAt": "2026-11-07T21:51:48.152Z",
   "updatedBy": "hientaa"
 }
