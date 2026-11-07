@@ -12,8 +12,21 @@
       "supervisorsCount": "1",
       "supervisors": "أ . محمد خليل",
       "trainer": "أ . علي ابراهيم"
+    },
+    {
+      "id": "b68826f6-14cf-42c7-a494-f0cad4596fcc",
+      "name": "محاضرة تعريفية",
+      "type": "محاضرة",
+      "purpose": "تعريف بأهمية الموارد البشرية",
+      "audience": "الشباب",
+      "place": "اونلاين",
+      "month": 1,
+      "day": 2,
+      "supervisorsCount": "1",
+      "supervisors": "أ . محمد خليل",
+      "trainer": "أ . علي ابراهيم"
     }
   ],
-  "updatedAt": "2026-11-07T20:37:03.611Z",
+  "updatedAt": "2026-11-07T20:42:19.762Z",
   "updatedBy": "hientaa"
 }
