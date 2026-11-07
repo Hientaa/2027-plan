@@ -90,21 +90,8 @@
       "supervisorsCount": "1",
       "supervisors": "المهندس سلمان محمد",
       "trainer": "المهندسـ عمار صالح"
-    },
-    {
-      "id": "343e7422-8acb-499d-b8d9-1d270a787923",
-      "name": "السماد العضوي 2",
-      "type": "ندوة",
-      "purpose": "طريقة تحضير السماد العضوي  مرحلة 2",
-      "audience": "المزارعين والشباب",
-      "place": "مقر الجمعية",
-      "month": 2,
-      "day": 18,
-      "supervisorsCount": "1",
-      "supervisors": "المهندس سلمان محمد",
-      "trainer": "المهندس عمار صالح"
     }
   ],
-  "updatedAt": "2026-11-07T21:25:47.552Z",
+  "updatedAt": "2026-11-07T21:26:08.007Z",
   "updatedBy": "hientaa"
 }
