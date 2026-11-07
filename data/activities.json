@@ -246,8 +246,34 @@
       "supervisorsCount": "5",
       "supervisors": "الأعضاء المؤسسين",
       "trainer": ""
+    },
+    {
+      "id": "242e89b6-3d5f-48ab-953f-9dd58d897d5c",
+      "name": "فن التصوير",
+      "type": "تدريب",
+      "purpose": "التعريف بفن التصوير الفوتوغرافي",
+      "audience": "الجميع",
+      "place": "مقر الجمعية",
+      "month": 1,
+      "day": 13,
+      "supervisorsCount": "",
+      "supervisors": "",
+      "trainer": "المصور حسان سليمان"
+    },
+    {
+      "id": "af385931-f6dd-4dab-83e7-86ecc1156413",
+      "name": "فن التصوير 2",
+      "type": "تدريب",
+      "purpose": "كيف نختار اللقطة المناسبة و اختيار زاوية التصوير",
+      "audience": "الجميع",
+      "place": "",
+      "month": 1,
+      "day": 20,
+      "supervisorsCount": "",
+      "supervisors": "",
+      "trainer": "المصور حسان سليمان"
     }
   ],
-  "updatedAt": "2026-11-07T21:44:15.562Z",
+  "updatedAt": "2026-11-07T21:48:18.956Z",
   "updatedBy": "hientaa"
 }
