@@ -38,8 +38,21 @@
       "supervisorsCount": "",
       "supervisors": "",
       "trainer": "أ . علي ابراهيم"
+    },
+    {
+      "id": "a480633a-552c-4bd5-888f-af2916551363",
+      "name": "2موارد بشرية",
+      "type": "تدريب",
+      "purpose": "الدور الاستراتيجي للموارد البشرية في المؤسسات",
+      "audience": "الشباب",
+      "place": "اونلاين",
+      "month": 1,
+      "day": 16,
+      "supervisorsCount": "",
+      "supervisors": "",
+      "trainer": "أ . علي ابراهيم"
     }
   ],
-  "updatedAt": "2026-11-07T20:46:26.877Z",
+  "updatedAt": "2026-11-07T20:48:16.865Z",
   "updatedBy": "hientaa"
 }
