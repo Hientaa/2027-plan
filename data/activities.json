@@ -103,8 +103,21 @@
       "supervisorsCount": "1",
       "supervisors": "المهندس سلمان محمد",
       "trainer": "المهندس عمار صالح"
+    },
+    {
+      "id": "ee7ea167-6f86-42d9-899c-695b8da1f6f0",
+      "name": "السماد العضوي3",
+      "type": "تدريب",
+      "purpose": "المرحلة النهاية وطريقة استخدام السماد العضوي",
+      "audience": "المزارعين والشباب",
+      "place": "مقر الجمعية",
+      "month": 2,
+      "day": 14,
+      "supervisorsCount": "1",
+      "supervisors": "المهندس سلمان محمد",
+      "trainer": "المهندس عمار صالح"
     }
   ],
-  "updatedAt": "2026-11-07T21:27:20.008Z",
+  "updatedAt": "2026-11-07T21:28:43.382Z",
   "updatedBy": "hientaa"
 }
